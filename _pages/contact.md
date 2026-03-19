@@ -340,7 +340,7 @@ permalink: /contact/
         <p class="info-item-label">Email</p>
         <p class="info-item-value">
           <!-- REPLACE with your real email address -->
-          <a href="mailto:lovelacetutoring@gmail.com">lovelacetutoring@gmail.com/a>
+          <a href="mailto:lovelacetutoring@gmail.com">lovelacetutoring@gmail.com</a>
         </p>
       </div>
 

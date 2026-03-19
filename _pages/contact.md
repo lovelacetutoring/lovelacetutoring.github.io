@@ -360,18 +360,17 @@ permalink: /contact/
       </a>
     </aside>
 
-    <!-- ── Right: form ── -->
+<!-- ── Right: form ── -->
     <div>
       <!--
-        FORMSPREE SETUP (2 steps):
-        1. Go to https://formspree.io and create a free account
-        2. Create a new form — you'll get a URL like https://formspree.io/f/abcdefgh
-        3. Replace YOUR_FORMSPREE_ENDPOINT below with that URL
+        WEB3FORMS SETUP (2 steps):
+        1. Go to https://web3forms.com and enter your email to get a free access key
+        2. Replace YOUR_ACCESS_KEY below with that key. That's it!
       -->
       <form
         id="contact-form"
         class="contact-form"
-        action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT"
+        action="https://api.web3forms.com/submit"
         method="POST"
       >
 
@@ -406,11 +405,14 @@ permalink: /contact/
 
         <p class="required-note"><span style="color:var(--gold-dark)">*</span> Required fields</p>
 
-        <!-- Hidden field — helps Formspree label submissions -->
-        <input type="hidden" name="_subject" value="New message from tutoring site">
+        <!-- Web3Forms access key — REPLACE with your own key from https://web3forms.com -->
+        <input type="hidden" name="access_key" value="29b2555b-6459-40d5-86f0-8ceb5d07d8b1">
 
-        <!-- Honeypot anti-spam field (hidden from real users) -->
-        <input type="text" name="_gotcha" style="display:none">
+        <!-- Subject line of the email you'll receive -->
+        <input type="hidden" name="subject" value="New message from tutoring site">
+
+        <!-- Honeypot anti-spam (hidden from real users) -->
+        <input type="checkbox" name="botcheck" style="display:none">
 
         <div class="form-notice" id="form-notice"></div>
 

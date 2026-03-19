@@ -340,23 +340,14 @@ permalink: /contact/
         <p class="info-item-label">Email</p>
         <p class="info-item-value">
           <!-- REPLACE with your real email address -->
-          <a href="mailto:hello@youremail.com">hello@youremail.com</a>
-        </p>
-      </div>
-
-      <div class="info-item">
-        <p class="info-item-label">Location</p>
-        <p class="info-item-value">
-          <!-- REPLACE or remove if online-only -->
-          Online &amp; in-person<br>
-          <span style="font-size:0.85rem; color:var(--ink-muted);">Edinburgh, UK</span>
+          <a href="mailto:lovelacetutoring@gmail.com">lovelacetutoring@gmail.com/a>
         </p>
       </div>
 
       <div class="info-item">
         <p class="info-item-label">Sessions</p>
         <p class="info-item-value">1-to-1 · Maths &amp; CS<br>
-          <span style="font-size:0.85rem; color:var(--ink-muted);">GCSE · A-Level · University</span>
+          <span style="font-size:0.85rem; color:var(--ink-muted);">GCSE · A-Level · IB · University</span>
         </p>
       </div>
 

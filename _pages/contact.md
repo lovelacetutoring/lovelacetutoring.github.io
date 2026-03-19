@@ -1,7 +1,6 @@
 ---
 layout: page
 permalink: /contact/
-title: Contact
 ---
 
 <!-- Google Fonts — same as home page -->

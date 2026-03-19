@@ -7,7 +7,7 @@ title: Contact
 <section id="contact">
   <h1>Get in touch!</h1>
 
-  <p>Email: <a href="mailto:xtutoring@gmail.com">xtutoring@gmail.com</a></p>
+  <p>Email: <a href="mailto:lovelacetutoring@gmail.com">lovelacetutoring@gmail.com</a></p>
 
   <p>Or fill out the form below:</p>
 

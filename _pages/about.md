@@ -4,26 +4,43 @@ title: About
 permalink: /about/
 ---
 
-[Reverie](https://github.com/amitmerchant1990/reverie) is a Jekyll theme which is simple and opinionated. It's actually a fork of [jekyll-now](https://github.com/barryclark/jekyll-now) with some additional features and personal touches which I've implemented to suit my needs for [my blog](https://www.amitmerchant.com).
+## About Me
 
-This is a plug-and-play Jekyll theme which you can use on GitHub Pages without even setting up a local environment.
+Hi, I’m [Your Name], a tutor specializing in Maths and Computer Science.
 
-## Features
+I help students improve their understanding, build confidence, and achieve strong results in exams.
 
-- Command-line free fork-first workflow, using GitHub.com to create, customize and post to your blog
-- Fully responsive and mobile optimized base theme
-- Sass/Coffeescript support using Jekyll 2.0
-- Free hosting on your GitHub Pages user site
-- All the SEO goodies comes in-built
-- Markdown blogging
-- Syntax highlighting using Pygments
-    - [Dracula syntax theme](https://draculatheme.com/) included
-- Disqus commenting
-- Google Analytics integration
-- Fuzzy search across blog posts
-- Pagination of posts works out-of-the-box.
-- Categorize posts out-of-the box
-- RSS Feed
-- In-built sitemap
+---
 
-Learn more about it [here](https://github.com/amitmerchant1990/reverie) on how to get started.
+## My Approach
+
+My teaching focuses on:
+
+- Clear, step-by-step explanations  
+- Building strong foundational understanding  
+- Tailoring lessons to each student  
+- Practising exam-style questions  
+
+---
+
+## Experience & Qualifications
+
+- [Degree or qualification]
+- [X years of tutoring experience]
+- Experience with [GCSE / A-level / other exams]
+
+---
+
+## Who I Help
+
+I work with:
+
+- Secondary school students  
+- GCSE and A-level students  
+- Students needing extra support or aiming for top grades  
+
+---
+
+## Get in Touch
+
+If you’re interested in tutoring, visit the [Contact page](/contact/) to get started.

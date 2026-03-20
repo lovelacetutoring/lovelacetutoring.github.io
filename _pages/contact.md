@@ -354,7 +354,7 @@ permalink: /contact/
       <div class="divider-line"></div>
 
       <!-- REPLACE href with your real LinkedIn URL -->
-      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" class="social-link">
+      <a href="uk.linkedin.com/company/lovelace-tutoring" target="_blank" rel="noopener" class="social-link">
         <span class="li-badge">in</span>
         LinkedIn
       </a>

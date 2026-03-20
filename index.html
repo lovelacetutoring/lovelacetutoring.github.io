@@ -37,54 +37,53 @@ permalink: /
   /* ════════════════════════════════
      HERO BANNER
   ════════════════════════════════ */
-  .hero {
-    position: relative;
+  .hero-photo {
     width: 100%;
-    min-height: 92vh;
+    display: block;
+    line-height: 0;
+    background: #0F5244;
+    text-align: center;
+  }
+
+  .hero-photo img {
+    max-width: 1280px;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .hero-band {
+    background: #0F5244;
+    padding: 2.8rem 7vw;
     display: flex;
     align-items: center;
-    overflow: hidden;
-    /* REPLACE: swap the background-color below with your image once added to the repo:
-       background: url('/assets/images/banner.jpg') center center / cover no-repeat; */
-    background-color: #2a3a35;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    animation: fadeUp 0.8s ease both;
   }
 
-  /* Soft left vignette so text stays readable */
-  .hero-vignette {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      100deg,
-      rgba(18,18,15,0.82) 0%,
-      rgba(18,18,15,0.55) 42%,
-      rgba(18,18,15,0.08) 100%
-    );
-  }
-
-  .hero-content {
-    position: relative;
-    z-index: 10;
-    max-width: 620px;
-    padding: 5rem 5vw 5rem 7vw;
-    animation: fadeUp 1s ease both;
+  .hero-band-text {
+    flex: 1;
+    min-width: 260px;
   }
 
   .hero-eyebrow {
     font-family: 'Source Code Pro', monospace;
-    font-size: 0.78rem;
+    font-size: 0.72rem;
     font-weight: 600;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--gold);
-    margin-bottom: 1.4rem;
+    margin-bottom: 0.6rem;
   }
 
   .hero-title {
     font-family: 'DM Serif Display', serif;
-    font-size: clamp(2.6rem, 5.5vw, 4.4rem);
-    line-height: 1.1;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    line-height: 1.2;
     color: #f8f6f0;
-    margin: 0 0 1.4rem;
+    margin: 0 0 0.5rem;
   }
 
   .hero-title em {
@@ -93,21 +92,21 @@ permalink: /
   }
 
   .hero-subtitle {
-    font-size: 1.05rem;
-    line-height: 1.7;
+    font-size: 0.95rem;
+    line-height: 1.6;
     font-weight: 300;
     color: rgba(248,246,240,0.72);
-    max-width: 480px;
-    margin-bottom: 2.4rem;
+    margin: 0;
   }
 
   .hero-cta {
     display: inline-block;
+    flex-shrink: 0;
     font-family: 'DM Sans', sans-serif;
     font-size: 0.9rem;
     font-weight: 500;
     letter-spacing: 0.06em;
-    color: var(--ink);
+    color: #0F5244;
     background: var(--gold);
     padding: 0.85rem 2rem;
     text-decoration: none;
@@ -117,12 +116,12 @@ permalink: /
   .hero-cta:hover {
     background: #e2b84a;
     transform: translateY(-2px);
-    color: var(--ink);
+    color: #0F5244;
     text-decoration: none;
   }
 
   @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(28px); }
+    from { opacity: 0; transform: translateY(20px); }
     to   { opacity: 1; transform: translateY(0); }
   }
 
@@ -282,24 +281,22 @@ permalink: /
 <!-- ══════════════════════════════════════
      HERO BANNER
 ══════════════════════════════════════ -->
-<section class="hero">
+<div class="hero-photo">
+  <!-- REPLACE src with your image path once added to the repo -->
+  <img src="/images/banner.jpg" alt="Maths and Computer Science tutor">
+</div>
 
-  <!-- Vignette overlay -->
-  <div class="hero-vignette"></div>
-
-  <!-- Text content -->
-  <div class="hero-content">
+<div class="hero-band">
+  <div class="hero-band-text">
     <p class="hero-eyebrow">Maths &amp; Computer Science Tutor</p>
     <h1 class="hero-title">
-      One-to-one tuition in<br>
+      One-to-one tuition in
       <em>Maths and Computer Science.</em>
     </h1>
-    <p class="hero-subtitle">
-      Exam revision, undergraduate support, and masterclasses.
-    </p>
-    <a href="/contact" class="hero-cta">Get in Touch</a>
+    <p class="hero-subtitle">Exam revision, undergraduate support, and masterclasses.</p>
   </div>
-</section>
+  <a href="/contact" class="hero-cta">Get in Touch</a>
+</div>
 
 <!-- ══════════════════════════════════════
      SERVICES

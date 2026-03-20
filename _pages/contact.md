@@ -323,10 +323,10 @@ permalink: /contact/
 
 <div class="contact-page">
 
-  <p class="contact-eyebrow">Get in touch</p>
-  <h1 class="contact-title">Let's talk</h1>
+  <p class="contact-eyebrow">Contact</p>
+  <h1 class="contact-title">Get in touch</h1>
   <p class="contact-intro">
-    Have a question or want to book a session? I'd love to hear from you — whether you're a student, parent, or just curious about how tutoring might help.
+    Have a question or want to book a session? We'd love to hear from you, whether you're a student, parent, or just curious about how tutoring might help.
   </p>
   <span class="contact-availability">Typically responds within 24 hours</span>
 

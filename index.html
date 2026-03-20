@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: page
 title: Home
+permalink: /
 ---
 
 <!-- Google Fonts -->
@@ -43,15 +44,9 @@ title: Home
     display: flex;
     align-items: center;
     overflow: hidden;
-    background: var(--ink);
-  }
-
-  /* Geometric SVG canvas (the "picture") */
-  .hero-canvas {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
+    /* REPLACE: swap the background-color below with your image once added to the repo:
+       background: url('/assets/images/banner.jpg') center center / cover no-repeat; */
+    background-color: #2a3a35;
   }
 
   /* Soft left vignette so text stays readable */
@@ -166,16 +161,16 @@ title: Home
   }
 
   /* ════════════════════════════════
-     SUBJECTS SECTION
+     SERVICES SECTION
   ════════════════════════════════ */
-  .subjects-grid {
+  .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1.5rem;
     margin-top: 2.8rem;
   }
 
-  .subject-card {
+  .service-card {
     border: 1px solid var(--rule);
     padding: 2rem 1.8rem;
     background: var(--paper);
@@ -184,7 +179,7 @@ title: Home
     transition: border-color 0.2s, transform 0.2s;
   }
 
-  .subject-card::before {
+  .service-card::before {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0;
@@ -195,46 +190,36 @@ title: Home
     transition: transform 0.25s ease;
   }
 
-  .subject-card:hover {
+  .service-card:hover {
     border-color: var(--gold-dark);
     transform: translateY(-3px);
   }
 
-  .subject-card:hover::before {
+  .service-card:hover::before {
     transform: scaleX(1);
   }
 
-  .subject-icon {
-    font-family: 'Source Code Pro', monospace;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--teal);
-    margin-bottom: 1rem;
-    display: block;
-  }
-
-  .subject-name {
+  .service-name {
     font-family: 'DM Serif Display', serif;
     font-size: 1.35rem;
     color: var(--ink);
-    margin: 0 0 0.6rem;
+    margin: 0 0 0.7rem;
   }
 
-  .subject-desc {
+  .service-desc {
     font-size: 0.92rem;
     line-height: 1.65;
     color: var(--ink-soft);
-    margin: 0;
+    margin: 0 0 1.1rem;
   }
 
-  .subject-topics {
-    margin-top: 1rem;
+  .service-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.4rem;
   }
 
-  .topic-tag {
+  .service-tag {
     font-family: 'Source Code Pro', monospace;
     font-size: 0.7rem;
     letter-spacing: 0.05em;
@@ -242,54 +227,6 @@ title: Home
     color: var(--teal);
     padding: 0.25rem 0.65rem;
     border-radius: 2px;
-  }
-
-  /* ════════════════════════════════
-     WHY CHOOSE ME
-  ════════════════════════════════ */
-  .why-section {
-    background: var(--cream);
-  }
-
-  .why-inner {
-    padding: 5.5rem 7vw;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-
-  .why-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 2.5rem;
-    margin-top: 2.8rem;
-  }
-
-  .why-item {
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-  }
-
-  .why-number {
-    font-family: 'DM Serif Display', serif;
-    font-size: 2.8rem;
-    color: var(--gold);
-    line-height: 1;
-  }
-
-  .why-heading {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--ink);
-    margin: 0;
-  }
-
-  .why-text {
-    font-size: 0.9rem;
-    line-height: 1.65;
-    color: var(--ink-soft);
-    margin: 0;
   }
 
   /* ════════════════════════════════
@@ -347,86 +284,6 @@ title: Home
 ══════════════════════════════════════ -->
 <section class="hero">
 
-  <!-- Abstract geometric SVG "picture" -->
-  <svg class="hero-canvas" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice"
-       xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-
-    <!-- Deep field -->
-    <rect width="1440" height="900" fill="#12120f"/>
-
-    <!-- Large tilted grid plane (perspective feel) -->
-    <g opacity="0.18" stroke="#c8a84b" stroke-width="0.7" fill="none">
-      <!-- horizontal lines -->
-      <line x1="600" y1="900" x2="1440" y2="420"/>
-      <line x1="600" y1="900" x2="1440" y2="480"/>
-      <line x1="600" y1="900" x2="1440" y2="540"/>
-      <line x1="600" y1="900" x2="1440" y2="600"/>
-      <line x1="600" y1="900" x2="1440" y2="660"/>
-      <line x1="600" y1="900" x2="1440" y2="720"/>
-      <line x1="600" y1="900" x2="1440" y2="780"/>
-      <!-- vertical lines -->
-      <line x1="600" y1="900" x2="720"  y2="380"/>
-      <line x1="600" y1="900" x2="840"  y2="360"/>
-      <line x1="600" y1="900" x2="960"  y2="350"/>
-      <line x1="600" y1="900" x2="1080" y2="345"/>
-      <line x1="600" y1="900" x2="1200" y2="342"/>
-      <line x1="600" y1="900" x2="1320" y2="340"/>
-      <line x1="600" y1="900" x2="1440" y2="340"/>
-    </g>
-
-    <!-- Large icosahedron-ish polyhedron (right side) -->
-    <g opacity="0.55" stroke="#1d6b5c" stroke-width="1" fill="none">
-      <polygon points="1140,120 1320,200 1360,400 1240,520 1060,480 1020,280" />
-      <polygon points="1140,120 1320,200 1230,60" />
-      <polygon points="1320,200 1360,400 1430,310" />
-      <polygon points="1360,400 1240,520 1350,590" />
-      <polygon points="1060,480 1020,280 960,400" />
-      <line x1="1140" y1="120" x2="1240" y2="520"/>
-      <line x1="1320" y1="200" x2="1060" y2="480"/>
-      <line x1="1020" y1="280" x2="1360" y2="400"/>
-    </g>
-
-    <!-- Smaller accent polyhedron -->
-    <g opacity="0.35" stroke="#c8a84b" stroke-width="0.8" fill="none">
-      <polygon points="1050,560 1150,600 1160,700 1080,740 980,700 970,600" />
-      <line x1="1050" y1="560" x2="1080" y2="740"/>
-      <line x1="1150" y1="600" x2="980"  y2="700"/>
-      <line x1="970"  y1="600" x2="1160" y2="700"/>
-    </g>
-
-    <!-- Floating circles (orbital feel) -->
-    <circle cx="1200" cy="330" r="160" stroke="#1d6b5c" stroke-width="0.6" fill="none" opacity="0.25"/>
-    <circle cx="1200" cy="330" r="230" stroke="#c8a84b" stroke-width="0.4" fill="none" opacity="0.15" stroke-dasharray="6 10"/>
-    <circle cx="1200" cy="330" r="300" stroke="#1d6b5c" stroke-width="0.3" fill="none" opacity="0.10" stroke-dasharray="3 14"/>
-
-    <!-- Maths glyphs scattered (right half only) -->
-    <g font-family="serif" fill="#c8a84b" opacity="0.22" font-size="22">
-      <text x="820"  y="200">∑</text>
-      <text x="1000" y="170">π</text>
-      <text x="1380" y="240">∞</text>
-      <text x="930"  y="750">√</text>
-      <text x="1300" y="820">∫</text>
-    </g>
-    <g font-family="'Source Code Pro', monospace" fill="#1d6b5c" opacity="0.22" font-size="14">
-      <text x="780"  y="680">01001</text>
-      <text x="1100" y="820">if x == 0:</text>
-      <text x="1310" y="680">return</text>
-    </g>
-
-    <!-- Accent dot cluster -->
-    <g fill="#c8a84b" opacity="0.5">
-      <circle cx="900" cy="140" r="2.5"/>
-      <circle cx="916" cy="152" r="1.8"/>
-      <circle cx="892" cy="158" r="1.4"/>
-      <circle cx="910" cy="168" r="2"/>
-    </g>
-    <g fill="#1d6b5c" opacity="0.5">
-      <circle cx="1380" cy="500" r="3"/>
-      <circle cx="1396" cy="488" r="2"/>
-      <circle cx="1370" cy="512" r="1.5"/>
-    </g>
-  </svg>
-
   <!-- Vignette overlay -->
   <div class="hero-vignette"></div>
 
@@ -434,93 +291,68 @@ title: Home
   <div class="hero-content">
     <p class="hero-eyebrow">Maths &amp; Computer Science Tutor</p>
     <h1 class="hero-title">
-      Build confidence.<br>
-      <em>Master the fundamentals.</em>
+      One-to-one tuition in<br>
+      <em>Maths and Computer Science.</em>
     </h1>
     <p class="hero-subtitle">
-      Expert one-to-one tuition in Maths and Computer Science — from GCSE through to university level.
+      Exam revision, undergraduate support, and masterclasses.
     </p>
     <a href="/contact" class="hero-cta">Get in Touch</a>
   </div>
 </section>
 
 <!-- ══════════════════════════════════════
-     SUBJECTS
+     SERVICES
 ══════════════════════════════════════ -->
 <hr class="divider">
 <section class="section">
-  <p class="section-label">What I teach</p>
-  <h2 class="section-title">Subjects Offered</h2>
+  <p class="section-label">What I offer</p>
+  <h2 class="section-title">How I can help</h2>
 
-  <div class="subjects-grid">
+  <div class="services-grid">
 
-    <div class="subject-card">
-      <span class="subject-icon">∑ ∫ √</span>
-      <h3 class="subject-name">Mathematics</h3>
-      <p class="subject-desc">
-        From algebra and calculus to statistics and mechanics — clear explanations tailored to your curriculum and pace.
+    <div class="service-card">
+      <h3 class="service-name">Exam Revision</h3>
+      <p class="service-desc">
+        Targeted preparation for high school exams in Maths and Computer Science — past papers, exam technique, and filling gaps before it counts.
       </p>
-      <div class="subject-topics">
-        <span class="topic-tag">GCSE</span>
-        <span class="topic-tag">A-Level</span>
-        <span class="topic-tag">Further Maths</span>
-        <span class="topic-tag">University</span>
+      <div class="service-tags">
+        <span class="service-tag">A-Level Maths</span>
+        <span class="service-tag">A-Level Further Maths</span>
+        <span class="service-tag">A-Level CS</span>
+        <span class="service-tag">IB Maths SL/HL</span>
+        <span class="service-tag">IB CS SL/HL</span>
       </div>
     </div>
 
-    <div class="subject-card">
-      <span class="subject-icon">&lt;/&gt; { }</span>
-      <h3 class="subject-name">Computer Science</h3>
-      <p class="subject-desc">
-        Programming, algorithms, data structures, and theory — hands-on sessions that bridge concepts and code.
+    <div class="service-card">
+      <h3 class="service-name">Undergraduate Support</h3>
+      <p class="service-desc">
+        Tailored help for university students working through Maths and CS modules. Not sure if your course is covered? Just enquire.
       </p>
-      <div class="subject-topics">
-        <span class="topic-tag">GCSE</span>
-        <span class="topic-tag">A-Level</span>
-        <span class="topic-tag">Python</span>
-        <span class="topic-tag">Algorithms</span>
+      <div class="service-tags">
+        <span class="service-tag">Linear Algebra</span>
+        <span class="service-tag">Algorithms &amp; Data Structures</span>
+        <span class="service-tag">Logic</span>
+        <span class="service-tag">Graph Theory</span>
+        <span class="service-tag">Combinatorics</span>
+        <span class="service-tag">Functional Programming</span>
+        <span class="service-tag">Numerical Computation</span>
       </div>
     </div>
 
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════
-     WHY CHOOSE ME
-══════════════════════════════════════ -->
-<hr class="divider">
-<section class="why-section">
-  <div class="why-inner">
-    <p class="section-label">Why work with me</p>
-    <h2 class="section-title">A tutor who meets you where you are</h2>
-
-    <div class="why-grid">
-
-      <div class="why-item">
-        <span class="why-number">01</span>
-        <p class="why-heading">Tailored to you</p>
-        <p class="why-text">Every session is planned around your goals, your syllabus, and the way you learn best.</p>
+    <div class="service-card">
+      <h3 class="service-name">Masterclasses</h3>
+      <p class="service-desc">
+        Deep dives into topics beyond the syllabus — whether you want to learn more or strengthen your university application. Available upon request.
+      </p>
+      <div class="service-tags">
+        <span class="service-tag">Machine Learning</span>
+        <span class="service-tag">Formal Verification</span>
+        <span class="service-tag">More available</span>
       </div>
-
-      <div class="why-item">
-        <span class="why-number">02</span>
-        <p class="why-heading">Subject expertise</p>
-        <p class="why-text">Deep knowledge in both Maths and Computer Science, with experience across exam boards.</p>
-      </div>
-
-      <div class="why-item">
-        <span class="why-number">03</span>
-        <p class="why-heading">Results-focused</p>
-        <p class="why-text">A track record of helping students improve grades and build genuine understanding.</p>
-      </div>
-
-      <div class="why-item">
-        <span class="why-number">04</span>
-        <p class="why-heading">Flexible sessions</p>
-        <p class="why-text">Online or in-person, scheduled around you — no rigid timetables.</p>
-      </div>
-
     </div>
+
   </div>
 </section>
 

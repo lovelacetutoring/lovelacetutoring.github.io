@@ -57,33 +57,35 @@ permalink: /about/
     margin: 0 0 2.8rem;
   }
 
-  /* ── Intro block: photo + bio side by side ── */
+  /* ── Intro block: floated photo ── */
   .intro-block {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    gap: 3rem;
-    align-items: start;
     margin-bottom: 3.5rem;
   }
 
-  @media (max-width: 600px) {
-    .intro-block {
-      grid-template-columns: 1fr;
-      gap: 1.8rem;
-    }
+  .photo-float {
+    float: right;
+    width: 110px;
+    margin: 0 0 1rem 2rem;
+    border: 1px solid var(--rule);
   }
 
-  /* Photo placeholder */
-  .photo-placeholder {
+  .photo-float img {
     width: 100%;
+    display: block;
+  }
+
+  .photo-placeholder {
+    width: 110px;
     aspect-ratio: 3 / 4;
     background: var(--cream);
     border: 1px solid var(--rule);
+    float: right;
+    margin: 0 0 1rem 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.6rem;
+    gap: 0.5rem;
   }
 
   .photo-placeholder svg {
@@ -92,13 +94,14 @@ permalink: /about/
 
   .photo-placeholder-label {
     font-family: 'Source Code Pro', monospace;
-    font-size: 0.65rem;
-    letter-spacing: 0.12em;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--ink-muted);
+    text-align: center;
+    padding: 0 0.3rem;
   }
 
-  /* Bio text */
   .bio-text p {
     font-size: 1rem;
     line-height: 1.8;
@@ -106,9 +109,28 @@ permalink: /about/
     margin: 0 0 1rem;
   }
 
-  .bio-text p:last-child {
-    margin-bottom: 0;
+  .bio-text p:last-child { margin-bottom: 0; }
+
+  .bio-clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
   }
+
+  /* ── Company section ── */
+  .company-block {
+    margin-bottom: 3.5rem;
+  }
+
+  .company-body {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--ink-soft);
+    max-width: 680px;
+  }
+
+  .company-body p { margin: 0 0 1rem; }
+  .company-body p:last-child { margin-bottom: 0; }
 
   /* ── Stat strip ── */
   .stat-strip {
@@ -305,36 +327,32 @@ permalink: /about/
 <div class="about-page">
 
   <p class="about-eyebrow">About me</p>
-  <h1 class="about-title">The tutor behind the sessions</h1>
+  <h1 class="about-title">About me</h1>
 
-  <!-- ── Intro: photo + bio ── -->
-  <div class="intro-block">
+  <!-- ── Intro: floated photo + bio ── -->
+  <div class="intro-block bio-clearfix">
 
     <div class="photo-placeholder">
       <!--
         TO ADD YOUR PHOTO:
         Replace this entire <div class="photo-placeholder"> block with:
-        <img src="/assets/images/your-photo.jpg" alt="Your Name"
-             style="width:100%; display:block; border: 1px solid var(--rule);">
+        <div class="photo-float">
+          <img src="/images/your-photo.jpg" alt="Your Name">
+        </div>
       -->
-      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="24" cy="18" r="9" stroke="#3d3d38" stroke-width="1.5"/>
         <path d="M6 42c0-9.941 8.059-18 18-18s18 8.059 18 18" stroke="#3d3d38" stroke-width="1.5" stroke-linecap="round"/>
       </svg>
-      <span class="photo-placeholder-label">Your photo here</span>
+      <span class="photo-placeholder-label">Your photo</span>
     </div>
 
     <div class="bio-text">
-      <!--
-        REPLACE the paragraphs below with your own introduction.
-        Aim for 2–3 short paragraphs: who you are, where you're based,
-        and what drew you to tutoring.
-      -->
       <p>
-        Hi, I'm [Your Name] — a Maths and Computer Science tutor based in Edinburgh. I work with students at GCSE, A-Level, and university level, helping them move from confusion to genuine confidence in two of the most rewarding subjects around.
+        Hi, I'm [Your Name] — a Maths and Computer Science tutor based in Edinburgh. I offer one-to-one tuition across three areas: exam revision for A-Level and IB students, tailored support for undergraduates, and masterclasses for those who want to go further.
       </p>
       <p>
-        I hold a degree in [Your Degree] from [Your University], and have been tutoring for [X] years. Over that time I've worked with students across a range of backgrounds, abilities, and goals — from those catching up on missed ground to those pushing for top grades.
+        I hold a degree in [Your Degree] from [Your University], and have been tutoring for [X] years. Over that time I've worked with students at all levels — from those preparing for high school exams to undergraduates working through demanding university modules.
       </p>
       <p>
         Outside of tutoring, I enjoy [a short personal detail — optional but makes you feel human and approachable].
@@ -351,16 +369,36 @@ permalink: /about/
       <p class="stat-label">Years tutoring</p>
     </div>
     <div class="stat-item">
-      <p class="stat-number">GCSE–Uni</p>
-      <p class="stat-label">Levels covered</p>
+      <p class="stat-number">A-Level<br>&amp; IB</p>
+      <p class="stat-label">Exam revision</p>
+    </div>
+    <div class="stat-item">
+      <p class="stat-number">Undergrad</p>
+      <p class="stat-label">University support</p>
     </div>
     <div class="stat-item">
       <p class="stat-number">1-to-1</p>
-      <p class="stat-label">Always personal</p>
+      <p class="stat-label">or small groups<br>(2&ndash;3 students)</p>
     </div>
-    <div class="stat-item">
-      <p class="stat-number">Online<br>&amp; in-person</p>
-      <p class="stat-label">Flexible format</p>
+  </div>
+
+  <!-- ── Company ── -->
+  <hr class="divider-line">
+  <div class="company-block">
+    <p class="section-label">The company</p>
+    <h2 class="section-heading">[Company Name]</h2>
+    <div class="company-body">
+      <!--
+        REPLACE with your own text.
+        Suggested structure: 1 paragraph on the story/meaning behind the name,
+        1 paragraph on what the company stands for.
+      -->
+      <p>
+        [Company Name] was founded in [year] with a simple idea: that the best way to learn Maths and Computer Science is through focused, personalised sessions — not crowded classrooms or one-size-fits-all resources. The name [explain the meaning or origin of the name here].
+      </p>
+      <p>
+        What we stand for is straightforward: rigorous teaching, genuine curiosity, and a belief that anyone can develop confidence in these subjects with the right support. Whether you're revising for exams, working through a tough university module, or simply want to learn more, the goal is always the same — real understanding, not just the right answer.
+      </p>
     </div>
   </div>
 
@@ -416,37 +454,28 @@ permalink: /about/
   <hr class="divider-line">
   <div class="help-block">
     <p class="section-label">What I can help with</p>
-    <h2 class="section-heading">Areas of expertise</h2>
+    <h2 class="section-heading">Services</h2>
     <div class="help-grid">
 
       <div class="help-item">
-        <p class="help-item-title">Pure Mathematics</p>
-        <p class="help-item-detail">Algebra &middot; Calculus &middot; Proof &middot; Trigonometry</p>
+        <p class="help-item-title">Exam Revision</p>
+        <p class="help-item-detail">A-Level Maths &middot; Further Maths &middot; CS &middot; IB Maths SL/HL &middot; IB CS SL/HL</p>
+        <!-- REPLACE with your real rate -->
+        <p class="help-item-detail" style="margin-top:0.6rem; color:var(--gold-dark); font-family:'DM Sans',sans-serif;">From £[XX]/hr</p>
       </div>
 
       <div class="help-item">
-        <p class="help-item-title">Applied Mathematics</p>
-        <p class="help-item-detail">Statistics &middot; Mechanics &middot; Probability</p>
+        <p class="help-item-title">Undergraduate Support</p>
+        <p class="help-item-detail">Linear Algebra &middot; Algorithms &amp; Data Structures &middot; Logic &middot; Graph Theory &middot; Combinatorics &middot; Functional Programming &middot; Numerical Computation</p>
+        <!-- REPLACE with your real rate -->
+        <p class="help-item-detail" style="margin-top:0.6rem; color:var(--gold-dark); font-family:'DM Sans',sans-serif;">From £[XX]/hr</p>
       </div>
 
       <div class="help-item">
-        <p class="help-item-title">Programming</p>
-        <p class="help-item-detail">Python &middot; Pseudocode &middot; Debugging</p>
-      </div>
-
-      <div class="help-item">
-        <p class="help-item-title">CS Theory</p>
-        <p class="help-item-detail">Algorithms &middot; Data structures &middot; Systems</p>
-      </div>
-
-      <div class="help-item">
-        <p class="help-item-title">Exam Technique</p>
-        <p class="help-item-detail">Mark scheme &middot; Past papers &middot; Timing</p>
-      </div>
-
-      <div class="help-item">
-        <p class="help-item-title">University Support</p>
-        <p class="help-item-detail">First-year Maths &amp; CS modules</p>
+        <p class="help-item-title">Masterclasses</p>
+        <p class="help-item-detail">Machine Learning &middot; Formal Verification &middot; more available upon request</p>
+        <!-- REPLACE with your real rate -->
+        <p class="help-item-detail" style="margin-top:0.6rem; color:var(--gold-dark); font-family:'DM Sans',sans-serif;">From £[XX]/hr</p>
       </div>
 
     </div>
@@ -459,46 +488,3 @@ permalink: /about/
   </div>
 
 </div>
-
-
-
-<!-- ## About Me
-
-Hi, I’m [Your Name], a tutor specializing in Maths and Computer Science.
-
-I help students improve their understanding, build confidence, and achieve strong results in exams.
-
----
-
-## My Approach
-
-My teaching focuses on:
-
-- Clear, step-by-step explanations  
-- Building strong foundational understanding  
-- Tailoring lessons to each student  
-- Practising exam-style questions  
-
----
-
-## Experience & Qualifications
-
-- [Degree or qualification]
-- [X years of tutoring experience]
-- Experience with [GCSE / A-level / other exams]
-
----
-
-## Who I Help
-
-I work with:
-
-- Secondary school students  
-- GCSE and A-level students  
-- Students needing extra support or aiming for top grades  
-
----
-
-## Get in Touch
-
-If you’re interested in tutoring, visit the [Contact page](/contact/) to get started. -->

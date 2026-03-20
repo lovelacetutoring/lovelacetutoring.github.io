@@ -349,10 +349,10 @@ permalink: /about/
 
     <div class="bio-text">
       <p>
-        Hi, I'm [Your Name] — a Maths and Computer Science tutor based in Edinburgh. I offer one-to-one tuition across three areas: exam revision for A-Level and IB students, tailored support for undergraduates, and masterclasses for those who want to go further.
+        Hi, I'm Maria. I am about to start my PhD in Computer Science in the UK. I offer one-to-one tuition across three areas: exam revision for A-Level and IB students, tailored support for undergraduates, and masterclasses for those who want to go further.
       </p>
       <p>
-        I hold a degree in [Your Degree] from [Your University], and have been tutoring for [X] years. Over that time I've worked with students at all levels — from those preparing for high school exams to undergraduates working through demanding university modules.
+        I hold a Mathematics degree with first class honours from the University of Edinburgh, and have been tutoring for 4 years. Over that time I've worked with students at all levels — from those preparing for high school exams to undergraduates working through demanding university modules.
       </p>
       <p>
         Outside of tutoring, I enjoy [a short personal detail — optional but makes you feel human and approachable].
@@ -394,7 +394,11 @@ permalink: /about/
         1 paragraph on what the company stands for.
       -->
       <p>
-        [Company Name] was founded in [year] with a simple idea: that the best way to learn Maths and Computer Science is through focused, personalised sessions — not crowded classrooms or one-size-fits-all resources. The name [explain the meaning or origin of the name here].
+        Ada Loveace was a leading 19th century mathematician who is consider the world's first programmer. At Lovelace Tutoring, we focus on Maths and Computer Science. Some snippets of questions we covered:
+          * What is an explanation of a machine learning output? How can we ensure explanations do not divulge any information?
+          * What does it mean for two graphs to be the same? Is there a general algorithm that can detect this?
+
+        Just 
       </p>
       <p>
         What we stand for is straightforward: rigorous teaching, genuine curiosity, and a belief that anyone can develop confidence in these subjects with the right support. Whether you're revising for exams, working through a tough university module, or simply want to learn more, the goal is always the same — real understanding, not just the right answer.
@@ -454,28 +458,28 @@ permalink: /about/
   <hr class="divider-line">
   <div class="help-block">
     <p class="section-label">What I can help with</p>
-    <h2 class="section-heading">Services</h2>
+    <h2 class="section-heading">Courses</h2>
     <div class="help-grid">
 
       <div class="help-item">
         <p class="help-item-title">Exam Revision</p>
         <p class="help-item-detail">A-Level Maths &middot; Further Maths &middot; CS &middot; IB Maths SL/HL &middot; IB CS SL/HL</p>
         <!-- REPLACE with your real rate -->
-        <p class="help-item-detail" style="margin-top:0.6rem; color:var(--gold-dark); font-family:'DM Sans',sans-serif;">From £[XX]/hr</p>
+        <p class="help-item-detail" style="margin-top:0.6rem; color:var(--gold-dark); font-family:'DM Sans',sans-serif;"> £45/hr</p>
       </div>
 
       <div class="help-item">
         <p class="help-item-title">Undergraduate Support</p>
         <p class="help-item-detail">Linear Algebra &middot; Algorithms &amp; Data Structures &middot; Logic &middot; Graph Theory &middot; Combinatorics &middot; Functional Programming &middot; Numerical Computation</p>
         <!-- REPLACE with your real rate -->
-        <p class="help-item-detail" style="margin-top:0.6rem; color:var(--gold-dark); font-family:'DM Sans',sans-serif;">From £[XX]/hr</p>
+        <p class="help-item-detail" style="margin-top:0.6rem; color:var(--gold-dark); font-family:'DM Sans',sans-serif;">From £55/hr</p>
       </div>
 
       <div class="help-item">
         <p class="help-item-title">Masterclasses</p>
         <p class="help-item-detail">Machine Learning &middot; Formal Verification &middot; more available upon request</p>
         <!-- REPLACE with your real rate -->
-        <p class="help-item-detail" style="margin-top:0.6rem; color:var(--gold-dark); font-family:'DM Sans',sans-serif;">From £[XX]/hr</p>
+        <p class="help-item-detail" style="margin-top:0.6rem; color:var(--gold-dark); font-family:'DM Sans',sans-serif;">From £60/hr</p>
       </div>
 
     </div>
@@ -483,7 +487,7 @@ permalink: /about/
 
   <!-- ── CTA ── -->
   <div class="about-cta">
-    <p class="about-cta-text">Ready to get started?<br>I'd love to hear about your goals.</p>
+    <p class="about-cta-text">Ready to get started?<br>Let's talk!.</p>
     <a href="/contact" class="about-cta-btn">Get in touch →</a>
   </div>
 

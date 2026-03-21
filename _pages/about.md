@@ -575,16 +575,18 @@ permalink: /about/
     </div>
   </div>
 
-  <!-- ── Background ── -->
+  <!-- ── Background ──
   <hr class="divider-line">
   <div class="background-block">
     <p class="section-label">Background</p>
     <h2 class="section-heading">Education &amp; experience</h2>
-    <div class="background-body">
-      <!--
+    <div class="background-body"> 
+  -->
+  <!--
         REPLACE with your real background.
         Keep it concise — 2 paragraphs is enough.
-      -->
+  -->
+  <!--
       <p>
         I graduated with a degree in [Your Subject] from [Your University], where I developed a strong foundation in both the theoretical and applied sides of Maths and Computer Science. During my studies I [brief relevant detail — e.g. "tutored fellow students informally" or "worked as a teaching assistant"].
       </p>
@@ -592,7 +594,8 @@ permalink: /about/
         Since then I've built up [X] years of one-to-one tutoring experience, working with students preparing for [exams / specific courses]. I stay up to date with curriculum changes and mark scheme expectations so that the advice I give is always relevant and exam-ready.
       </p>
     </div>
-  </div>
+  </div> 
+  -->
 
   <!-- ── What I can help with ── -->
   <hr class="divider-line">

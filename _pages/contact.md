@@ -346,7 +346,7 @@ permalink: /contact/
 
       <div class="info-item">
         <p class="info-item-label">Sessions</p>
-        <p class="info-item-value">1-to-1/ Small groups · Maths &amp; CS<br>
+        <p class="info-item-value">1-to-1 or small groups <br> Maths &amp; CS<br>
           <span style="font-size:0.85rem; color:var(--ink-muted);"> University · A-Level · IB · Masterclasses </span>
         </p>
       </div>

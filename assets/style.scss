@@ -297,7 +297,7 @@ p > img {
 
 .site-info {
   float: left;
-
+  margin-top: 40px;
   @include mobile {
     float: none;
     display: block;

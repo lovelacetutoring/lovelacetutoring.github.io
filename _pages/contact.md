@@ -326,7 +326,7 @@ permalink: /contact/
   <p class="contact-eyebrow">Contact</p>
   <h1 class="contact-title">Get in touch</h1>
   <p class="contact-intro">
-    Have a question or want to book a session? We'd love to hear from you, whether you're a student, parent, or just curious about how tutoring might help.
+    Have a question or would you like to book a session? Please fill out the form below, and I will get back to you shortly.
   </p>
   <span class="contact-availability">Typically responds within 24 hours</span>
 
@@ -346,15 +346,15 @@ permalink: /contact/
 
       <div class="info-item">
         <p class="info-item-label">Sessions</p>
-        <p class="info-item-value">1-to-1 · Maths &amp; CS<br>
-          <span style="font-size:0.85rem; color:var(--ink-muted);">GCSE · A-Level · IB · University</span>
+        <p class="info-item-value">1-to-1/ Small groups · Maths &amp; CS<br>
+          <span style="font-size:0.85rem; color:var(--ink-muted);"> University · A-Level · IB · Masterclasses </span>
         </p>
       </div>
 
       <div class="divider-line"></div>
 
       <!-- REPLACE href with your real LinkedIn URL -->
-      <a href="uk.linkedin.com/company/lovelace-tutoring" target="_blank" rel="noopener" class="social-link">
+      <a href="https://uk.linkedin.com/company/lovelace-tutoring" target="_blank" rel="noopener" class="social-link">
         <span class="li-badge">in</span>
         LinkedIn
       </a>

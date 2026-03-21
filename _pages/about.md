@@ -449,7 +449,7 @@ permalink: /about/
 
     <div class="bio-text">
       <p>
-        Hi, I'm Mary! I read Mathematics at the University of Edinburgh, and I will shortly begin my PhD in Computer Science. I have worked as a software engineer and researcher, and I enjoy teaching on the side.
+        Hi, I'm Mary! I hold a Mathematics degree with first-class honours from the University of Edinburgh, and I will shortly begin my PhD in Computer Science. I have worked as a software engineer and researcher, and I regularly teach alongside my work.
       </p>
       <p>
         About 5 years ago, I applied for a teaching assistant position for the Discrete Maths course. Since then, I have tutored 7 courses, ranging from Functional Programming to Scientific Computation, and have also worked privately with undergraduates tackling demanding university modules, as well as high school students preparing for final exams.s
@@ -505,27 +505,15 @@ permalink: /about/
     <h2 class="section-heading">Lovelace Tutoring</h2>
     <div class="company-layout">
 
-      <div class="company-photo-placeholder">
-        <!--
-          TO ADD A PHOTO:
-          Replace this entire <div class="company-photo-placeholder"> block with:
-          <div class="company-photo">
-            <img src="/images/your-company-photo.jpg" alt="Company Name">
-          </div>
-        -->
-        <svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" opacity="0.3">
-          <rect x="4" y="8" width="40" height="32" rx="2" stroke="#3d3d38" stroke-width="1.5"/>
-          <circle cx="16" cy="20" r="4" stroke="#3d3d38" stroke-width="1.5"/>
-          <path d="M4 36l10-8 8 6 8-10 14 12" stroke="#3d3d38" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="company-photo-placeholder-label">Company photo</span>
+     <div class="company-photo">
+            <img src="/images/ada.jpg" alt="Lovelace Tutoring">
       </div>
 
       <div class="company-body">
         <p>
           Ada Lovelace was a leading 19th-century mathematician, widely considered the world’s first programmer.
 
-          [Company Name] was founded with a simple idea: that the best way to learn Maths and Computer Science is through focused, personalised sessions — not crowded classrooms or one-size-fits-all resources.
+          Lovelace Tutoring aims to deliver world-class tuition in Maths and Computer Science through focused, personalised, and engaging sessions.
         </p>
         <p>
           Rigorous teaching, genuine curiosity, and a belief that anyone can develop confidence in these subjects with the right support. The goal is always the same — real understanding, not just the right answer.
@@ -575,17 +563,14 @@ permalink: /about/
       <p>
         I believe the best tutoring isn't about re-teaching a textbook — it's about uncovering exactly where understanding breaks down and rebuilding from there. Before anything else, I take time to understand how a student thinks, not just what they know.
       </p>
-
+      <!--
       <blockquote class="pull-quote">
         "Understanding why something works matters more than memorising that it does."
-      </blockquote>
+      </blockquote> 
+      -->
 
       <p>
         Sessions are structured but flexible. We might work through exam technique one week and spend the next entirely on one concept that deserves more space. I find that students make the most progress when they feel comfortable asking questions — so creating that environment is always the first priority.
-      </p>
-      <p>
-        <!-- REPLACE or remove this paragraph -->
-        I have experience with [SQA / AQA / OCR / Edexcel — list your exam boards], and I tailor every session to the specific syllabus and assessment style a student is working towards.
       </p>
     </div>
   </div>
@@ -613,7 +598,7 @@ permalink: /about/
   <hr class="divider-line">
   <div class="help-block">
     <p class="section-label">What I can help with</p>
-    <h2 class="section-heading">Services</h2>
+    <h2 class="section-heading">Private Tutoring Services</h2>
     <div class="help-grid">
 
       <div class="help-item">

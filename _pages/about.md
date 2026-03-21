@@ -438,7 +438,7 @@ permalink: /about/
 <div class="about-page">
 
   <p class="about-eyebrow">About me</p>
-  <h1 class="about-title">About me</h1>
+  <h2 class="about-title">About me</h2>
 
   <!-- ── Intro: floated photo + bio ── -->
   <div class="intro-block bio-clearfix">
@@ -460,10 +460,10 @@ permalink: /about/
 
     <div class="bio-text">
       <p>
-        Hi, I'm [Your Name] — a Maths and Computer Science tutor based in Edinburgh. I offer one-to-one tuition across three areas: exam revision for A-Level and IB students, tailored support for undergraduates, and masterclasses for those who want to explore topics beyond the syllabus — from machine learning to formal verification.
+        Hi, I'm Mary! I read Mathematics at the University of Edinburgh, and I will shortly begin my PhD in Computer Science. I have worked as a software engineer and researcher, and I enjoy teaching on the side.
       </p>
       <p>
-        I hold a degree in [Your Degree] from [Your University], and have been tutoring for 5 years, working with students at all levels — from those preparing for high school exams to undergraduates working through demanding university modules.
+        I have been tutoring for more than 4 years, working with undergraduates working through demanding university modules and high school preparing for final exams.
       </p>
     </div>
 
@@ -479,12 +479,16 @@ permalink: /about/
       <span class="result-number">100%</span>
       <span class="result-label">Of A-Level &amp; IB students met their university conditional offer</span>
     </div>
+    <div class="result-card">
+      <span class="result-number">20+ students tutored 1-to-1</span>
+      <span class="result-label">15 undergraduates and 7 high school students</span>
+    </div>
   </div>
 
   <!-- ── Stats strip ── -->
   <div class="stat-strip">
     <div class="stat-item">
-      <p class="stat-number">5+</p>
+      <p class="stat-number">4+</p>
       <p class="stat-label">Years tutoring</p>
     </div>
     <div class="stat-item">
@@ -641,7 +645,7 @@ permalink: /about/
         <p class="help-item-title">Masterclasses</p>
         <p class="help-item-detail">Machine Learning &middot; Formal Verification &middot; more available upon request</p>
         <!-- REPLACE with your real rate -->
-        <p class="help-item-detail" style="margin-top:0.6rem; color:var(--gold-dark); font-family:'DM Sans',sans-serif;">From £60/hr</p>
+        <p class="help-item-detail" style="margin-top:0.6rem; color:var(--gold-dark); font-family:'DM Sans',sans-serif;">£60/hr</p>
       </div>
 
     </div>

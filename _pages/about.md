@@ -352,6 +352,7 @@ permalink: /about/
         Hi, I'm Maria! I hold a Maths degree and I'm about to start my PhD in Computer Science, I spent some time working as a software engineer and researcher, and I enjoy teaching. 
         
         I have been tutoring for 5 years. During this time, I've worked both with undergraduates and with high school students.
+      </p>
     </div>
 
   </div>
@@ -414,7 +415,7 @@ permalink: /about/
         how you adapt to different learners.
       -->
       <p>
-        
+
         I believe the best tutoring isn't about re-teaching a textbook — it's about uncovering exactly where understanding breaks down and rebuilding from there. Before anything else, I take time to understand how a student thinks, not just what they know.
       </p>
 

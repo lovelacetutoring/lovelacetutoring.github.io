@@ -117,20 +117,131 @@ permalink: /about/
     clear: both;
   }
 
+  /* ── Results highlight strip ── */
+  .results-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 3.5rem;
+  }
+
+  @media (max-width: 600px) {
+    .results-strip { grid-template-columns: 1fr; }
+  }
+
+  .result-card {
+    background: #0f5244;
+    padding: 1.4rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .result-number {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+    color: var(--gold);
+    line-height: 1;
+  }
+
+  .result-label {
+    font-size: 0.82rem;
+    color: rgba(248,246,240,0.82);
+    line-height: 1.4;
+  }
+
   /* ── Company section ── */
   .company-block {
     margin-bottom: 3.5rem;
+  }
+
+  .company-layout {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  @media (max-width: 560px) {
+    .company-layout {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .company-photo {
+    width: 100%;
+    border: 1px solid var(--rule);
+  }
+
+  .company-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .company-photo-placeholder {
+    width: 100%;
+    aspect-ratio: 1;
+    background: var(--cream);
+    border: 1px solid var(--rule);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .company-photo-placeholder-label {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    text-align: center;
+    padding: 0 0.5rem;
   }
 
   .company-body {
     font-size: 1rem;
     line-height: 1.8;
     color: var(--ink-soft);
-    max-width: 680px;
   }
 
   .company-body p { margin: 0 0 1rem; }
   .company-body p:last-child { margin-bottom: 0; }
+
+  /* ── Question snippets ── */
+  .snippets-block {
+    margin-bottom: 3.5rem;
+  }
+
+  .snippets-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 0.4rem;
+  }
+
+  .snippet-item {
+    border-left: 3px solid var(--gold);
+    padding: 0.8rem 1.2rem;
+    background: var(--cream);
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    font-style: italic;
+  }
+
+  .snippet-topic {
+    display: inline-block;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.65rem;
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 0.3rem;
+  }
 
   /* ── Stat strip ── */
   .stat-strip {
@@ -142,7 +253,7 @@ permalink: /about/
   }
 
   .stat-item {
-    padding: 1.4rem 1.6rem;
+    padding: 0.9rem 1rem;
     border-right: 1px solid var(--rule);
   }
 
@@ -160,16 +271,16 @@ permalink: /about/
 
   .stat-number {
     font-family: 'DM Serif Display', serif;
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: var(--gold);
     line-height: 1;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.2rem;
   }
 
   .stat-label {
-    font-size: 0.78rem;
+    font-size: 0.68rem;
     color: var(--ink-muted);
-    line-height: 1.4;
+    line-height: 1.3;
   }
 
   /* ── Section shared ── */
@@ -349,18 +460,30 @@ permalink: /about/
 
     <div class="bio-text">
       <p>
-        Hi, I'm Maria! I hold a Maths degree and I'm about to start my PhD in Computer Science, I spent some time working as a software engineer and researcher, and I enjoy teaching. 
-        
-        I have been tutoring for 5 years. During this time, I've worked both with undergraduates and with high school students.
+        Hi, I'm [Your Name] — a Maths and Computer Science tutor based in Edinburgh. I offer one-to-one tuition across three areas: exam revision for A-Level and IB students, tailored support for undergraduates, and masterclasses for those who want to explore topics beyond the syllabus — from machine learning to formal verification.
+      </p>
+      <p>
+        I hold a degree in [Your Degree] from [Your University], and have been tutoring for 5 years, working with students at all levels — from those preparing for high school exams to undergraduates working through demanding university modules.
       </p>
     </div>
 
   </div>
 
+  <!-- ── Results highlight ── -->
+  <div class="results-strip">
+    <div class="result-card">
+      <span class="result-number">100%</span>
+      <span class="result-label">Of undergraduate tutees achieved a first in their university exam</span>
+    </div>
+    <div class="result-card">
+      <span class="result-number">100%</span>
+      <span class="result-label">Of A-Level &amp; IB students met their university conditional offer</span>
+    </div>
+  </div>
+
   <!-- ── Stats strip ── -->
   <div class="stat-strip">
     <div class="stat-item">
-      <!-- REPLACE with your real figure -->
       <p class="stat-number">5+</p>
       <p class="stat-label">Years tutoring</p>
     </div>
@@ -370,11 +493,15 @@ permalink: /about/
     </div>
     <div class="stat-item">
       <p class="stat-number">Undergrad</p>
-      <p class="stat-label">University support</p>
+      <p class="stat-label">Uni support</p>
     </div>
     <div class="stat-item">
       <p class="stat-number">1-to-1</p>
       <p class="stat-label">or small groups<br>(2&ndash;3 students)</p>
+    </div>
+    <div class="stat-item">
+      <p class="stat-number">Masterclass</p>
+      <p class="stat-label">ML &middot; Formal Verification<br>&amp; more</p>
     </div>
   </div>
 
@@ -383,24 +510,62 @@ permalink: /about/
   <div class="company-block">
     <p class="section-label">The company</p>
     <h2 class="section-heading">Lovelace Tutoring</h2>
-    <div class="company-body">
-      <!--
-        REPLACE with your own text.
-        Suggested structure: 1 paragraph on the story/meaning behind the name,
-        1 paragraph on what the company stands for.
-      -->
-      <p>
-        Ada Loveace was a leading 19th century mathematician considered the world's first programmer. At Lovelace Tutoring, we focus on Maths and Computer Science. Recently, 
-          * What is an explanation of a machine learning output? How can we ensure explanations do not divulge any information?
-          * What does it mean for two graphs to be the same? Is there a general algorithm that can detect this?
+    <div class="company-layout">
 
-        Just 
-      </p>
-      <p>
+      <div class="company-photo-placeholder">
+        <!--
+          TO ADD A PHOTO:
+          Replace this entire <div class="company-photo-placeholder"> block with:
+          <div class="company-photo">
+            <img src="/images/your-company-photo.jpg" alt="Company Name">
+          </div>
+        -->
+        <svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" opacity="0.3">
+          <rect x="4" y="8" width="40" height="32" rx="2" stroke="#3d3d38" stroke-width="1.5"/>
+          <circle cx="16" cy="20" r="4" stroke="#3d3d38" stroke-width="1.5"/>
+          <path d="M4 36l10-8 8 6 8-10 14 12" stroke="#3d3d38" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="company-photo-placeholder-label">Company photo</span>
+      </div>
 
-        What we stand for is straightforward: rigorous teaching, genuine curiosity, and a belief that anyone can develop confidence in these subjects with the right support. Whether you're revising for exams, working through a tough university module, or simply want to learn more, the goal is always the same — real understanding, not just the right answer.
-      </p>
+      <div class="company-body">
+        <p>
+          Ada Lovelace was a leading 19th-century mathematician, widely considered the world’s first programmer.
+
+          [Company Name] was founded with a simple idea: that the best way to learn Maths and Computer Science is through focused, personalised sessions — not crowded classrooms or one-size-fits-all resources.
+        </p>
+        <p>
+          Rigorous teaching, genuine curiosity, and a belief that anyone can develop confidence in these subjects with the right support. The goal is always the same — real understanding, not just the right answer.
+        </p>
+      </div>
+
     </div>
+
+    <!-- Questions explored — inside company section -->
+    <div style="margin-top: 2rem;">
+      <p class="section-label" style="margin-bottom:0.8rem;">From our sessions</p>
+      <div class="snippets-list">
+
+        <div class="snippet-item">
+          <span class="snippet-topic">Machine Learning</span><br>
+          What is an explanation of a machine learning output? How can we ensure explanations do not divulge any information?
+        </div>
+
+        <div class="snippet-item">
+          <span class="snippet-topic">Probability</span><br>
+          Two players A and B each toss a fair coin. A stops when he gets two consecutive heads; B stops when she gets a head followed by a tail. Who is more likely to stop first?
+        </div>
+
+        <div class="snippet-item">
+          <span class="snippet-topic">Graph Theory</span><br>
+          What does it mean for two graphs to be isomorphic? Is there a general algorithm that can detect this?
+        </div>
+
+        <!-- ADD MORE SNIPPETS HERE — copy the block above and update the topic and question -->
+
+      </div>
+    </div>
+
   </div>
 
   <!-- ── Teaching philosophy ── -->
@@ -415,7 +580,6 @@ permalink: /about/
         how you adapt to different learners.
       -->
       <p>
-
         I believe the best tutoring isn't about re-teaching a textbook — it's about uncovering exactly where understanding breaks down and rebuilding from there. Before anything else, I take time to understand how a student thinks, not just what they know.
       </p>
 
@@ -456,21 +620,21 @@ permalink: /about/
   <hr class="divider-line">
   <div class="help-block">
     <p class="section-label">What I can help with</p>
-    <h2 class="section-heading">Courses</h2>
+    <h2 class="section-heading">Services</h2>
     <div class="help-grid">
 
       <div class="help-item">
         <p class="help-item-title">Exam Revision</p>
         <p class="help-item-detail">A-Level Maths &middot; Further Maths &middot; CS &middot; IB Maths SL/HL &middot; IB CS SL/HL</p>
         <!-- REPLACE with your real rate -->
-        <p class="help-item-detail" style="margin-top:0.6rem; color:var(--gold-dark); font-family:'DM Sans',sans-serif;"> £45/hr</p>
+        <p class="help-item-detail" style="margin-top:0.6rem; color:var(--gold-dark); font-family:'DM Sans',sans-serif;">£35/hr</p>
       </div>
 
       <div class="help-item">
         <p class="help-item-title">Undergraduate Support</p>
         <p class="help-item-detail">Linear Algebra &middot; Algorithms &amp; Data Structures &middot; Logic &middot; Graph Theory &middot; Combinatorics &middot; Functional Programming &middot; Numerical Computation</p>
         <!-- REPLACE with your real rate -->
-        <p class="help-item-detail" style="margin-top:0.6rem; color:var(--gold-dark); font-family:'DM Sans',sans-serif;">From £55/hr</p>
+        <p class="help-item-detail" style="margin-top:0.6rem; color:var(--gold-dark); font-family:'DM Sans',sans-serif;">£50/hr</p>
       </div>
 
       <div class="help-item">
@@ -485,7 +649,7 @@ permalink: /about/
 
   <!-- ── CTA ── -->
   <div class="about-cta">
-    <p class="about-cta-text">Ready to get started?<br>Let's talk!.</p>
+    <p class="about-cta-text">Ready to get started?<br>I'd love to hear about your goals.</p>
     <a href="/contact" class="about-cta-btn">Get in touch →</a>
   </div>
 

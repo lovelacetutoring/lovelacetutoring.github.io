@@ -443,27 +443,16 @@ permalink: /about/
   <!-- ── Intro: floated photo + bio ── -->
   <div class="intro-block bio-clearfix">
 
-    <div class="photo-placeholder">
-      <!--
-        TO ADD YOUR PHOTO:
-        Replace this entire <div class="photo-placeholder"> block with:
-        <div class="photo-float">
-          <img src="/images/your-photo.jpg" alt="Your Name">
+    <div class="photo-float">
+          <img src="/images/girl.png" alt="Mary">
         </div>
-      -->
-      <svg width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="24" cy="18" r="9" stroke="#3d3d38" stroke-width="1.5"/>
-        <path d="M6 42c0-9.941 8.059-18 18-18s18 8.059 18 18" stroke="#3d3d38" stroke-width="1.5" stroke-linecap="round"/>
-      </svg>
-      <span class="photo-placeholder-label">Your photo</span>
-    </div>
 
     <div class="bio-text">
       <p>
         Hi, I'm Mary! I read Mathematics at the University of Edinburgh, and I will shortly begin my PhD in Computer Science. I have worked as a software engineer and researcher, and I enjoy teaching on the side.
       </p>
       <p>
-        I have been tutoring for more than 4 years, working with undergraduates working through demanding university modules and high school preparing for final exams.
+        About 5 years ago, I applied for a teaching assistant position for the Discrete Maths course. Since then, I have tutored 7 courses, ranging from Functional Programming to Scientific Computation, and have also worked privately with undergraduates tackling demanding university modules, as well as high school students preparing for final exams.s
       </p>
     </div>
 
@@ -481,7 +470,7 @@ permalink: /about/
     </div>
     <div class="result-card">
       <span class="result-number">20+</span>
-      <span class="result-label">S tudents tutored 1-to-1 (15 undergraduates, 7 high school students)</span>
+      <span class="result-label">Students tutored 1:1 (15 undergraduates, 7 high school students)</span>
     </div>
   </div>
 
@@ -503,10 +492,10 @@ permalink: /about/
       <p class="stat-number">1-to-1</p>
       <p class="stat-label">or small groups<br>(2&ndash;3 students)</p>
     </div>
-    <div class="stat-item">
+    <!-- <div class="stat-item">
       <p class="stat-number">Masterclass</p>
       <p class="stat-label">ML &middot; Formal Verification<br>&amp; more</p>
-    </div>
+    </div> -->
   </div>
 
   <!-- ── Company ── -->

@@ -480,8 +480,8 @@ permalink: /about/
       <span class="result-label">Of A-Level &amp; IB students met their university conditional offer</span>
     </div>
     <div class="result-card">
-      <span class="result-number">20+ students tutored 1-to-1</span>
-      <span class="result-label">15 undergraduates and 7 high school students</span>
+      <span class="result-number">20+</span>
+      <span class="result-label">S tudents tutored 1-to-1 (15 undergraduates, 7 high school students)</span>
     </div>
   </div>
 

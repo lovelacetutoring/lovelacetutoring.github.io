@@ -349,14 +349,9 @@ permalink: /about/
 
     <div class="bio-text">
       <p>
-        Hi, I'm Maria. I am about to start my PhD in Computer Science in the UK. I offer one-to-one tuition across three areas: exam revision for A-Level and IB students, tailored support for undergraduates, and masterclasses for those who want to go further.
-      </p>
-      <p>
-        I hold a Mathematics degree with first class honours from the University of Edinburgh, and have been tutoring for 4 years. Over that time I've worked with students at all levels — from those preparing for high school exams to undergraduates working through demanding university modules.
-      </p>
-      <p>
-        Outside of tutoring, I enjoy [a short personal detail — optional but makes you feel human and approachable].
-      </p>
+        Hi, I'm Maria! I hold a Maths degree and I'm about to start my PhD in Computer Science, I spent some time working as a software engineer and researcher, and I enjoy teaching. 
+        
+        I have been tutoring for 5 years. During this time, I've worked both with undergraduates and with high school students.
     </div>
 
   </div>
@@ -386,7 +381,7 @@ permalink: /about/
   <hr class="divider-line">
   <div class="company-block">
     <p class="section-label">The company</p>
-    <h2 class="section-heading">[Company Name]</h2>
+    <h2 class="section-heading">Lovelace Tutoring</h2>
     <div class="company-body">
       <!--
         REPLACE with your own text.
@@ -394,13 +389,14 @@ permalink: /about/
         1 paragraph on what the company stands for.
       -->
       <p>
-        Ada Loveace was a leading 19th century mathematician who is consider the world's first programmer. At Lovelace Tutoring, we focus on Maths and Computer Science. Some snippets of questions we covered:
+        Ada Loveace was a leading 19th century mathematician considered the world's first programmer. At Lovelace Tutoring, we focus on Maths and Computer Science. Recently, 
           * What is an explanation of a machine learning output? How can we ensure explanations do not divulge any information?
           * What does it mean for two graphs to be the same? Is there a general algorithm that can detect this?
 
         Just 
       </p>
       <p>
+
         What we stand for is straightforward: rigorous teaching, genuine curiosity, and a belief that anyone can develop confidence in these subjects with the right support. Whether you're revising for exams, working through a tough university module, or simply want to learn more, the goal is always the same — real understanding, not just the right answer.
       </p>
     </div>
@@ -418,6 +414,7 @@ permalink: /about/
         how you adapt to different learners.
       -->
       <p>
+        
         I believe the best tutoring isn't about re-teaching a textbook — it's about uncovering exactly where understanding breaks down and rebuilding from there. Before anything else, I take time to understand how a student thinks, not just what they know.
       </p>
 

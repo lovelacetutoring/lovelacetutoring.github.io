@@ -452,7 +452,7 @@ permalink: /about/
         Hi, I'm Mary! I hold a Mathematics degree with first-class honours from the University of Edinburgh, and I will shortly begin my PhD in Computer Science. I have worked as a software engineer and researcher, and I regularly teach alongside my work.
       </p>
       <p>
-        About 5 years ago, I applied for a teaching assistant position for the Discrete Maths course. Since then, I have tutored 7 courses, ranging from Functional Programming to Scientific Computation, and have also worked privately with undergraduates tackling demanding university modules, as well as high school students preparing for final exams.s
+        About 5 years ago, I applied for a teaching assistant position for the Discrete Maths course. Since then, I have tutored 7 courses, ranging from Functional Programming to Scientific Computation, and have also worked privately with undergraduates tackling demanding university modules, as well as high school students preparing for final exams.
       </p>
     </div>
 
@@ -561,7 +561,7 @@ permalink: /about/
         how you adapt to different learners.
       -->
       <p>
-        I believe the best tutoring isn't about re-teaching a textbook — it's about uncovering exactly where understanding breaks down and rebuilding from there. Before anything else, I take time to understand how a student thinks, not just what they know.
+        I begin with a brief call to understand the student’s expectations and develop a tailored plan. During sessions, I focus on helping students see the big picture and then gradually fitting new ideas into it. I use illustrative examples, pose challenging questions, and guide students through the reasoning process. I find that students make the most progress when they feel comfortable asking questions, so I always encourage an open and supportive environment.
       </p>
       <!--
       <blockquote class="pull-quote">
@@ -570,7 +570,7 @@ permalink: /about/
       -->
 
       <p>
-        Sessions are structured but flexible. We might work through exam technique one week and spend the next entirely on one concept that deserves more space. I find that students make the most progress when they feel comfortable asking questions — so creating that environment is always the first priority.
+        
       </p>
     </div>
   </div>

@@ -614,14 +614,14 @@ permalink: /about/
         <p class="help-item-title">Undergraduate Support</p>
         <p class="help-item-detail">Linear Algebra &middot; Algorithms &amp; Data Structures &middot; Logic &middot; Graph Theory &middot; Combinatorics &middot; Functional Programming &middot; Numerical Computation</p>
         <!-- REPLACE with your real rate -->
-        <p class="help-item-detail" style="margin-top:0.6rem; color:var(--gold-dark); font-family:'DM Sans',sans-serif;">£50/hr</p>
+        <p class="help-item-detail" style="margin-top:0.6rem; color:var(--gold-dark); font-family:'DM Sans',sans-serif;">From £50/hr</p>
       </div>
 
       <div class="help-item">
         <p class="help-item-title">Masterclasses</p>
         <p class="help-item-detail">Machine Learning &middot; Formal Verification &middot; more available upon request</p>
         <!-- REPLACE with your real rate -->
-        <p class="help-item-detail" style="margin-top:0.6rem; color:var(--gold-dark); font-family:'DM Sans',sans-serif;">£60/hr</p>
+        <p class="help-item-detail" style="margin-top:0.6rem; color:var(--gold-dark); font-family:'DM Sans',sans-serif;">From £60/hr</p>
       </div>
 
     </div>

@@ -607,7 +607,7 @@ permalink: /about/
         <p class="help-item-title">Exam Revision</p>
         <p class="help-item-detail">A-Level Maths &middot; Further Maths &middot; CS &middot; IB Maths SL/HL &middot; IB CS SL/HL</p>
         <!-- REPLACE with your real rate -->
-        <p class="help-item-detail" style="margin-top:0.6rem; color:var(--gold-dark); font-family:'DM Sans',sans-serif;">£35/hr</p>
+        <p class="help-item-detail" style="margin-top:0.6rem; color:var(--gold-dark); font-family:'DM Sans',sans-serif;">From £35/hr</p>
       </div>
 
       <div class="help-item">

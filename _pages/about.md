@@ -514,9 +514,8 @@ permalink: /about/
           Ada Lovelace was a leading 19th-century mathematician, widely considered the world’s first programmer.
 
           Lovelace Tutoring aims to deliver world-class tuition in Maths and Computer Science through focused, personalised, and engaging sessions.
-        </p>
-        <p>
-          Rigorous teaching, genuine curiosity, and a belief that anyone can develop confidence in these subjects with the right support. The goal is always the same — real understanding, not just the right answer.
+
+          Each lesson is designed to close knowledge gaps, sharpen reasoning, and build the precision needed for top exam performance.
         </p>
       </div>
 

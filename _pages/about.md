@@ -449,7 +449,7 @@ permalink: /about/
 
     <div class="bio-text">
       <p>
-        Hi, I'm Mary! I hold a Mathematics degree with first-class honours from the University of Edinburgh, and I will shortly begin my PhD in Computer Science. I have worked as a software engineer and researcher, and I regularly teach alongside my work.
+        Hi there! I hold a Mathematics degree with first-class honours from the University of Edinburgh, and I will shortly begin my PhD in Computer Science. I have worked as a software engineer and researcher, and I regularly teach alongside my work.
       </p>
       <p>
         About 5 years ago, I applied for a teaching assistant position for the Discrete Maths course. Since then, I have tutored 7 courses, ranging from Functional Programming to Scientific Computation, and have also worked privately with undergraduates tackling demanding university modules, as well as high school students preparing for final exams.
@@ -629,8 +629,8 @@ permalink: /about/
 
   <!-- ── CTA ── -->
   <div class="about-cta">
-    <p class="about-cta-text">Ready to get started?<br>I'd love to hear about your goals.</p>
-    <a href="/contact" class="about-cta-btn">Get in touch →</a>
+    <p class="about-cta-text">Ready to get started?<br>Let's talk.</p>
+    <a href="/contact" class="about-cta-btn">Contact me →</a>
   </div>
 
 </div>
